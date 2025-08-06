@@ -1,0 +1,60 @@
+.popup, .delete-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 15px;
+  padding: 5px 20px;
+  position: fixed;
+  text-wrap: nowrap;
+  top: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  animation: slide-up-down 0.3s ease-in-out;
+}
+
+.delete-popup {
+  background-color: #f34905;
+}
+
+.popup .popup-content,
+.delete-popup .popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.check-img, .close-img {
+  width: 25px;
+}
+
+.close-img {
+  cursor: pointer;
+}
+
+@keyframes slide-up-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 460px) {
+  .popup .popup-content,
+  .delete-popup .popup-content {
+    gap: 1rem;
+    font-size: 12px;
+  }
+}

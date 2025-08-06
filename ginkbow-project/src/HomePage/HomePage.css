@@ -1,0 +1,27 @@
+.cont-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto 0;
+}
+.js-shopping-container {
+  width: 97%;
+}
+
+
+
+
+@media (max-width: 1150px) {
+  .cont-container {
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+  .js-shopping-container {
+    width: 100%;
+  }
+  @media (max-width: 560px) {
+    
+  }
+   
+}

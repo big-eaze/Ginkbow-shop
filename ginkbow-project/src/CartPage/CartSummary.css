@@ -1,0 +1,221 @@
+.cart-product-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(228, 226, 226);
+}
+.product-img {
+  width: 140px;
+}
+.product-info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+ 
+}
+.n-p-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.product-Name {
+  font-size: 20px;
+  font-family: roboto, Arial;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: roboto, Arial;
+
+}
+.discount-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.initial-price {
+  font-size: 18px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.available {
+  font-size: 14px;
+  color: rgb(43, 118, 168);
+  font-family: roboto, Arial;
+}
+
+.discount-percent {
+  width: 45px;
+  padding: 2px;
+  font-size: 18px;
+  background-color: rgb(217, 225, 230);
+  color: rgb(43, 118, 168);
+  font-weight: 700;
+}
+
+.quantity-delete-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reduction-btn, .addition-btn{
+  padding: 6px 10px;
+  border: 0;
+  font-size: 20px; /* for sold-out text*/
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(43, 118, 168);
+  cursor: pointer;
+}
+
+.addition-btn:hover, .reduction-btn:hover {
+  background-color: rgb(68, 132, 175);
+}
+.addition-btn:active, .reduction-btn:active {
+  background-color: rgb(4, 91, 150);
+}
+
+
+
+.disabled-btn {
+  background-color: gray; /* Change button color */
+  pointer-events: none;  /* Disable clicking */
+  opacity: 0.6; /* Reduce opacity */
+  cursor: default; /* Remove pointer cursor */
+}
+
+.disabled-btn:hover {
+  background-color: gray; /* Keep the same color on hover */
+}
+
+
+.empty-cart {
+  margin-top: 2rem;
+}
+
+.quantity {
+  font-size: 20px;
+}
+
+
+.quantity-icon {
+  width: 20px;
+}
+.delete-container {
+  display: flex;
+  gap: 7px;
+  cursor: pointer;
+  align-content: center;
+}
+.delete-icon {
+  fill: rgb(43, 118, 168);;
+}
+.remove {
+  margin-top: 10px;
+  font-family: roboto, Arial;
+  font-size: 18px;
+  color: rgb(43, 118, 168);
+}
+
+
+
+
+
+
+
+
+  @media (max-width: 580px) {
+     .summary {
+      font-size: 15px;
+    }   
+    .product-img {
+      width: 80px;
+      height: 80px;
+    }
+    .product-Name, .product-price, .initial-price, .discount-percent {
+      font-size: 14px;
+    }
+    .product-Name {
+      width: 170px;
+    }
+    .available {
+      font-size: 12px;
+    }
+    .discount-percent {
+      width: 33px;
+      font-size: 13px;
+    }
+    .remove {
+      font-size: 13px;
+    }
+    .delete-icon {
+      width: 20px;
+    }
+    .delete-container {
+      gap: 2px;
+    }
+    .quantity-icon {
+      width: 15px;
+    }
+    .reduction-btn, .addition-btn {
+      padding: 2px 7px;
+    }
+    
+
+    @media (max-width: 380px) {
+      .summary {
+        font-size: 13px;
+      }
+      .product-img {
+        width: 60px;
+        height: 60px;
+      }
+      .product-Name, .product-price, .initial-price, .discount-percent {
+        font-size: 12px;
+      }
+      .product-Name {
+        width: 100px;
+      }
+      .available {
+        font-size: 10px;
+      }
+      .discount-percent {
+        width: 30px;
+        font-size: 10px;
+      }
+      .remove {
+        margin-top: 13px;
+        font-size: 10px;
+      }
+      .delete-icon {
+        width: 15px;
+      }
+      .delete-container {
+        gap: 2px;
+      }
+      .place-order-btn {
+        margin-left: 0.5rem;
+        
+      }
+      .quantity-icon {
+        width: 12px;
+      }
+      .reduction-btn, .addition-btn {
+        padding: 1px 6px;
+      }
+      .quantity {
+        font-size: 13px;
+      }
+    }
+   
+  } 
+  

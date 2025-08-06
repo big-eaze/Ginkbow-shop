@@ -1,0 +1,299 @@
+.second-layer-container {
+  width: 100%;
+  background-color: rgb(43, 118, 168);
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 100;
+}
+
+.second-layer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 10px 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 800; /* Ensure it appears above the website content */
+  pointer-events: all; /* Intercept all clicks */
+}
+
+
+
+.contents {
+  display: flex;
+  align-items: center;
+  width: 1027px;
+  margin: 0 auto 0;
+}
+
+
+.joint-3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 0px;
+  /*take note for responsiveness*/
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  top: 60%;
+  left: 7%;
+}
+
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.jumia-logo-2 {
+  width: 60px;
+}
+
+
+.joint-4 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.magnifer-icon {
+  display: none;
+  width: 34px;
+  padding: 5px;
+  padding-left: 5px;
+  border: 1px solid white;
+  border-right: 0px;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.search-bar {
+  flex: 1;
+  width: 300px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+  /*border-left: 0;*/
+  /*because the magnifier icon is not displayed*/
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  outline: none;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+}
+
+.search-bar::placeholder {
+  color: rgb(201, 196, 196);
+}
+
+.joint-5 {
+  display: flex;
+}
+
+
+.search-button {
+  padding: 10px 8px;
+  font-weight: 900;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgb(247, 246, 246);
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.search-button:hover {
+  background-color: #1eb9f6;
+  color: white;
+}
+
+.big-three {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.user-icon,
+.help-icon,
+.cart-icon {
+  width: 30px;
+  fill: white;
+}
+
+.cart {
+  font-family: roboto, Arial;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.joint-6 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.arrow-down {
+  width: 18px;
+}
+
+.mini-joint {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.joint-6:hover .user-icon {
+  fill: #1eb9f6;
+}
+
+.joint-6:hover .help-icon {
+  fill: #1eb9f6;
+}
+
+.joint-6:hover .cart-icon {
+  fill: #1eb9f6;
+}
+
+.joint-6:hover .cart {
+  color: #1eb9f6;
+}
+
+.joint-6:hover .cart-quantity {
+  background-color: #1eb9f6;
+  color: white;
+  ;
+}
+
+.joint-6:hover .arrow-down {
+  fill: #1eb9f6;
+}
+
+
+.cart-concealer {
+  display: flex;
+  position: relative;
+}
+
+.cart-quantity {
+  position: absolute;
+  background-color: white;
+  padding: 2px 5px;
+  color: black;
+  font-size: 15px;
+  font-family: roboto, Arial;
+  font-weight: 700;
+  border-radius: 50%;
+  top: -6px;
+  left: 10px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .second-layer {
+    justify-content: space-between;
+    width: 70%;
+  }
+}
+@media (max-width: 999px) {
+  .big-three {
+    display: none;
+  }
+
+  .second-layer {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-bar {
+    width: 500px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .menu-icon {
+    display: block;
+    width: 25px;
+  }
+}
+
+@media (max-width: 772px) {
+  .search-bar {
+    width: 350px;
+    font-size: 15px;
+  }
+  .search-button {
+    margin: 0px;
+  }
+  .joint-4 {
+    gap: 8  px;
+  }
+}
+@media (max-width: 560px) {
+  .search-bar {
+    width: 300px;
+  }
+  .jumia-logo-2 {
+    width: 45px;
+  }
+  .search-button {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  
+}
+@media (max-width: 445px) {
+  .second-layer {
+    gap: 0rem;
+  }
+  .search-bar {
+    width: 260px;
+    font-size: 13px;
+  }
+  .jumia-logo-2 {
+    width: 35px;
+  }
+
+  .menu-icon {
+    width: 20px;
+  }
+}
+
+@media (max-width:340px) {
+  .jumia-logo-2 {
+    width: 30px;
+  }
+  .search-bar {
+    width: 230px;
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+}

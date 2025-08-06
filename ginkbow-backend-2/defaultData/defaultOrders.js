@@ -1,0 +1,33 @@
+const orderData = [
+  {
+    "id": "27cba69d-4c3d-4098-b42d-ac7fa62b7664",
+    "orderTimeMs": 1723456800000,
+    "totalCostCents": 178651,
+    "products": [
+      {
+        "productId": "tqi-xqjt0-oof6-p4dnam",
+        "quantity": 1,
+        "estimatedDeliveryTimeMs": 1723456800000 + 7 * 24 * 60 * 60 * 1000 // 7 days later
+      },
+      {
+        "productId": "cfx-pnjvt-9o59-7fhr67",
+        "quantity": 2,
+        "estimatedDeliveryTimeMs": 1723456800000 + 7 * 24 * 60 * 60 * 1000 // 7 days later
+      }
+    ]
+  },
+  {
+    "id": "b6b6c212-d30e-4d4a-805d-90b52ce6b37d",
+    "orderTimeMs": 1718013600000,
+    "totalCostCents": 25652,
+    "products": [
+      {
+        "productId": "ekh-1cp3g-c5rx-yw0plq",
+        "quantity": 2,
+        "estimatedDeliveryTimeMs": 1718013600000 + 7 * 24 * 60 * 60 * 1000 // 7 days later
+      }
+    ]
+  }
+];
+
+export default orderData;

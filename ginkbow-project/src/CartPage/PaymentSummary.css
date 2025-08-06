@@ -1,0 +1,95 @@
+
+.summary {
+  font-family: roboto, Arial;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(228, 226, 226);
+}
+
+.delivery-fee, .total-order, .item-cost {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.d-free, .total-order-figure, .subtotal-figure {
+  font-weight: 500;
+  font-size: 22px;
+  
+}
+.joint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(228, 226, 226);
+}
+
+.place-order-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(43, 118, 168);
+  border: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: roboto, Arial;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background-color: rgb(30, 104, 153);
+}
+
+
+@media (max-width: 950px) {
+  
+  .container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 560px) {
+    .summary {
+      font-size: 15px;
+    }   
+    .item-cost,.delivery-fee, .total-order {
+      font-size: 14px;
+    }
+    
+    .subtotal-figure, .d-free, .total-order-figure {
+      font-size: 17px;
+    }
+    .place-order-btn {
+      margin-left: 0.5rem;
+      
+    }
+    .container-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 380px) {
+      .summary {
+        font-size: 13px;
+      }
+      
+      .item-cost,.delivery-fee, .total-order {
+        font-size: 12px;
+      }
+     
+     
+      .subtotal-figure, .d-free, .total-order-figure {
+        font-size: 14px;
+      }
+      .place-order-btn {
+        margin-left: 0.5rem;
+        font-size: 14px;
+        
+      }
+
+    }
+    
+  } 
+}

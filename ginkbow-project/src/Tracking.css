@@ -1,0 +1,120 @@
+
+.tracking-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.order-summary h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.order-summary p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+}
+
+.progress-tracker::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #d3d2d2;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  background: #bdbdbd;
+  color: white;
+  padding: 15px;
+  border-radius: 30%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.step.completed {
+  background: #4caf50;
+}
+
+
+.step.current {
+  background: #2196f3;
+}
+.tracking-essent {
+  display: flex;
+  align-items: center;
+}
+
+.tracking-details p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.copy-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.copy-btn:hover {
+  background: #1976d2;
+}
+
+
+@media (max-width: 700px) {
+  .progress-tracker {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+  }
+  .progress-tracker::before {
+    height: 100%;
+    left: 49%;
+    right: 49%;
+  }
+  .step {
+    width: 200px;
+  }
+  .tracking-container {
+    max-width: 90%;
+  }
+  .order-summary h2 {
+    font-size: 17px;
+  }
+
+
+
+  @media (max-width: 460px) {
+    
+    .progress-tracker::before {
+      left: 49%;
+      right: 49%;
+    }
+  }
+}
