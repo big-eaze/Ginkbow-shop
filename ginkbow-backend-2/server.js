@@ -31,7 +31,13 @@ app.use(cors()); // Add this line to enable CORS for all routes
 
 app.use(express.json());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
+
+if (!PORT) {
+  console.error("❌ ERROR: Render didn't provide a PORT");
+  process.exit(1);
+}
+
 
 
 // Routes
